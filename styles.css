@@ -1,0 +1,14 @@
+#grid-container{
+    display: flex;
+    box-sizing: border-box;
+    flex-flow: row wrap;
+    border: 10px solid #070a0e33;
+    margin: 0 auto;
+    height: 700px;
+    width: 700px;
+}
+
+.grid-square{
+    border: 1px solid black;
+    flex: 1 0 100px;
+}
