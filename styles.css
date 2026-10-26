@@ -1,6 +1,9 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
 #grid-container{
     display: flex;
-    box-sizing: border-box;
     flex-flow: row wrap;
     border: 10px solid #070a0e33;
     margin: 0 auto;
@@ -10,5 +13,5 @@
 
 .grid-square{
     border: 1px solid black;
-    flex: 1 0 20%;
+    
 }
