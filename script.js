@@ -49,10 +49,14 @@ function createNewGrid(numberOfSquares){
 
     const resetButton = document.querySelector('#reset-button');
     resetButton.addEventListener('click', () => {
-    let numberOfSquares = prompt(`Enter a single number for rows and colums`);
-    const oldGridSquares = document.querySelectorAll('.grid-square');
-    oldGridSquares.forEach((square) => {
+    let numberOfSquares = prompt(
+        `Enter a single number for rows and colums less than 100`);
+    if(numberOfSquares > 100){
+        alert(`Outside of range! Try again.`);
+    } else {
+        const oldGridSquares = document.querySelectorAll('.grid-square');
+        oldGridSquares.forEach((square) => {
         gridContainer.removeChild(square);
     });
     createNewGrid(numberOfSquares);
-    });    
+    }});
