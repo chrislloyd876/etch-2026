@@ -1,5 +1,6 @@
 const gridContainer = document.querySelector('#grid-container');
 
+
 function createGrid(){
     for(let rowNum = 0; rowNum < 15; rowNum++){
         for(let colNum = 0; colNum <= 16; colNum++){
@@ -8,11 +9,10 @@ function createGrid(){
             gridSquare.style.backgroundColor = `red`;
             gridSquare.style.width = `${gridContainer.clientWidth / 16}px`;
             gridSquare.style.height = `${gridContainer.clientHeight / 16}px`;
-            gridContainer.appendChild(gridSquare);
-            console.log(gridSquare.clientWidth);   
+            gridContainer.appendChild(gridSquare);  
         }
     }  
-
+        
     // How to change the color of the squares
     const allGridSquares = document.querySelectorAll('.grid-square');
     allGridSquares.forEach((element) => {
