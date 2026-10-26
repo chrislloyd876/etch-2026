@@ -24,6 +24,14 @@ function createGrid(){
             }
         });
     });
+
+    const resetButton = document.querySelector('#reset-button');
+    resetButton.addEventListener('click', () => {
+    let numberOfSquares = prompt(`Enter a single number for rows and colums`);
+    allGridSquares.forEach((square) =>{
+        gridContainer.removeChild(square);
+    });
+    });
 }   
 
 createGrid();
